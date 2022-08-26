@@ -1,4 +1,5 @@
 const http = require('http')
+const PORT = 5000
 
 const server = http.createServer((req, res) => {
     if(req.url === '/') {
@@ -11,4 +12,4 @@ const server = http.createServer((req, res) => {
     `)
 })
 
-server.listen(5000)
+server.listen(PORT)
